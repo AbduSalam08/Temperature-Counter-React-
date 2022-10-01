@@ -1,38 +1,91 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.App h1 {
+  font-size: 60px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: #212121;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: background 2s;
+}
+.App .counterCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: #00000050;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.counterCard .counterBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 40px;
+  margin: 0 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  color: #000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: background 2s !important;
+}
+.counterCard span {
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
+  transition: color 2s !important;
 }
 
-.App-link {
-  color: #61dafb;
+.cold {
+  /* background: linear-gradient(90deg, #4fb3f6, #006fb9); */
+  background-color: #4fb3f6;
+}
+.txtCold {
+  color: #4fb3f6 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hot {
+  /* background: linear-gradient(90deg, #f6a04f, #b95000); */
+  background-color: #f6a04f;
+}
+.txtHot {
+  color: #f6a04f;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.infobars{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infobox{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.coldbox{
+  background-color: #4fb3f6;
+}
+.hotbox{
+  background-color: #f6a04f;
 }
